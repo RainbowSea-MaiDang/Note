@@ -8069,7 +8069,7 @@ Ajax在线文档：https://www.w3school.com.cn/js/js_ajax_intro.asp
 
 ```java
 //创建 XMLHttpRequest 对象
-variable = new XMLHttpRequest();
+var xhttp = new XMLHttpRequest();
 
 //向服务器发送请求
 xhttp.open("GET", "ajax_info.txt", true); //参数:规定请求的类型、文件位置、同步false异步true 

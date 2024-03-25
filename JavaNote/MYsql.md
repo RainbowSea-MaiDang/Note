@@ -275,11 +275,13 @@ select `max`+1 as '修改后' from t1;  --列数据全部加一显示
 
 > 关键字
 
-| 关键字   | 含义   | 用法                                                         |
-| -------- | ------ | ------------------------------------------------------------ |
-| as       | 取别名 | **select** [列1] **as** [新名] **from** 表名 **as** [新表名] |
-| concat   | 连接   | **select concat**  ([字符],[列名])  **from** 表名            |
-| distinct | 去重   | **select distinct** 列名  **from** 表名                      |
+| 关键字       | 含义       | 用法                                                         |
+| ------------ | ---------- | ------------------------------------------------------------ |
+| as           | 取别名     | **select** [列1] **as** [新名] **from** 表名 **as** [新表名] |
+| concat       | 连接       | **select concat**  ([字符],[列名])  **from** 表名            |
+| concat_ws    | 多字段连接 | **select concat_ws**  ([连接符],[列名1],[列名2])  **from** 表名 |
+| group_concat | 纵向拼接   | **select group_concat**  列名  **from** 表名                 |
+| distinct     | 去重       | **select distinct** 列名  **from** 表名                      |
 
  **别名 -as**
 
@@ -296,6 +298,12 @@ select * from t1 as t;
 ```sql
 --连接学号和id
 select concat('学号:',id) from t1;
+```
+
+**多字段连接-concat_ws**
+
+```mysal
+select concat_ws(':',id,name,pwd) from t1;
 ```
 
 **去重-distinct**
@@ -562,7 +570,25 @@ SELECT * FROM TableA  LEFT JOIN TableB ON conditionA
 
 
 
-## 4.8子查询与嵌套查询
+
+
+## 4.8 联合查询 union
+
+将两张表纵向拼接，要求：字段数目必须相同；
+
+```mysql
+select * from TableA union select * from TableB;
+```
+
+
+
+
+
+## 4.9子查询与嵌套查询
+
+```mysql
+SELECT * FROM TableA where id in(SELECT uid FROM TableB );
+```
 
 
 
@@ -641,9 +667,85 @@ select min(result) as '最低分' from stu;  --查平均分
 
 
 
+# 6.元数据库information_schema
+
+![image-20240318132423487](https://typora-picgo-push.oss-cn-hangzhou.aliyuncs.com/img-for-typora/image-20240318132423487.png)
+
+> 查询所有数据库名
+
+```mysql
+select schema_name from information_schema.schemata;
+```
+
+> 查询某一数据库下的表名
+
+```mysql
+select table_name from information_schema.tables where table_schema="数据库名";
+```
+
+> 查询某一数据库中某一表的字段名
+
+```mysql
+select column_name from information_schema.columns where ctable_schema="数据库名" and table_name="表名";
+```
+
+---
 
 
-# 6.数据库md5密码加密
+
+# 7.远程管理
+
+> 1.查询mysql用户的可登录位置 (host)
+
+```mysql
+select user,password,host from mysql.user;
+```
+
+> 2.授权 -格式：grant 授权内容 on  库名.表名 to 用户名@登录主机ip  identified by 密码;
+
+```mysql
+grant all on  T.* to 'root'@'192.168.1.1' identified by '123456';
+```
+
+> 3.撤权-格式：revoke 撤权内容 on 库名.表名 from  用户名@登录主机ip
+
+```mysql
+revoke all on  T.* from 'root'@'192.168.1.1';
+```
+
+---
+
+
+
+# 8.安全模式重置密码
+
+> 条件：
+
+- 必须是Linux的root账户
+- 必须先停止mysql的数据库工作
+- 以安全模式启动mysql
+
+---
+
+```sh
+systemctl stop mariadb.service  #停止
+mysqld_safe --skip-grant-table &   #安全模式启动
+mysql -uroot   #此时无需密码进入
+```
+
+```mysql
+update mysql.user set password=password('123456') where host='localhost' and user='root'; #修改密码
+```
+
+重启并登录；
+
+---
+
+
+
+
+
+# 9.数据库md5密码加密
 
 > 加密
 
@@ -688,12 +790,6 @@ Source 文件名.sql
 #备份数据库中的表
 mysqldump -u 用户名 -p 数据库 表1 表2 表n >【路径】文件名.sql
 ```
-
-
-
-
-
-
 
 
 

@@ -83,7 +83,6 @@ netsh interface ip set dnsserver "[接口名称]" static 8.8.8.8
 
 #设置IPV4 动态
 netsh interface ip set address "[网络适配器名称]" dhcp 
-
 ```
 
 
@@ -367,10 +366,6 @@ DHCP提供的TCP/IP配置 ：• IP地址   • 子网掩码   • 网关   • 
 
 
 # 7.DNS服务
-
-
-
-
 
 
 

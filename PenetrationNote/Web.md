@@ -407,5 +407,43 @@ try  except finally
 
 
 
-## 内网主机存活检测程序
+## 类
+
+类定义：`class stu():`
+
+```py
+__init__()   #init方法是类的实例，用于对象属性的初始化，类似于java有参构造
+```
+
+
+
+> 继承 -可以多重继承
+
+```py
+class kid():
+    def __init__(self,name="",age=""):
+        self.naem=name
+        self.age=age
+    def play(self):
+        print("play")
+     
+#继承
+class stu(kid):
+    def __init__(self,name="name",age="age",score="99"):
+        kid.__init__(self,name,age) #继承父类属性
+        self.score=score
+    
+```
+
+> 封装 -属性名前加`___`表私有
+
+```py
+class kid():
+    def __init__(self,name="",age=""):
+        self.__naem=name
+        self.__age=age
+    def play(self):
+        print("play")
+     
+```
 

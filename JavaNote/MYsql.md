@@ -580,6 +580,12 @@ SELECT * FROM TableA  LEFT JOIN TableB ON conditionA
 select * from TableA union select * from TableB;
 ```
 
+union可以不直接接表明，使用null代替列名(TableA有几列，null就有几个)
+
+```sql
+select * from TableA union select null,null;
+```
+
 
 
 

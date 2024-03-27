@@ -1,11 +1,17 @@
-## 实验环境
+## 实验说明
+
+> 实验环境
 
 - kali Linux
 - python3
 
+> 实验目标
+
+编写脚本完成对CentOS_7下的用户密码爆破
 
 
-## 实验相关知识
+
+## 相关知识
 
 ### shadow用户密码文件
 
@@ -31,7 +37,7 @@ root:$6$NS.LfAkXDntETSNh$W0ax51eUwwQ.9f/UoRKB1KEHoyofFvdgu4srTH3lhQk6mjuz9pLaC.1
 
 
 
-### crypt函数使用
+### crypt函数
 
 `crypt.crypt` 函数是 Python 标准库中的一部分，用于生成加密后的密码哈希值。在 Unix 和 Linux 系统中，一般会使用 C 库中的 `crypt()` 函数来进行密码加密。Python 的 `crypt.crypt` 函数实际上是对这个 C 函数的 Python 接口进行了封装。
 

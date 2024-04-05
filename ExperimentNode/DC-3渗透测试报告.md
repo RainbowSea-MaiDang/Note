@@ -18,7 +18,7 @@ DC-3靶场
 
 > 端口扫描
 
-![image-20240405141705277](C:/Users/admin/AppData/Roaming/Typora/typora-user-images/image-20240405141705277.png)
+![image-20240405141705277](https://typora-picgo-push.oss-cn-hangzhou.aliyuncs.com/img-for-typora/image-20240405141705277.png)
 
 可以看到，该主机只开放了80端口，运行httpd服务；
 

@@ -17,6 +17,8 @@
 
 # 二、漏洞复现案例
 [Apache Shiro_反序列化](https://github.com/RainbowSea-MaiDang/Note/blob/main/ExperimentNode/Apache%20Shiro%20%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96.md)<br/>
+[Windows 永恒之蓝](https://github.com/RainbowSea-MaiDang/Note/blob/main/ExperimentNode/%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D.md)<br/>
+[MS Office 远程代码执行](https://github.com/RainbowSea-MaiDang/Note/blob/main/ExperimentNode/office%E6%BC%8F%E6%B4%9E.md)<br/>
 
 
 # 三、软件使用

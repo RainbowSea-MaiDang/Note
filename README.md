@@ -16,6 +16,7 @@
 [dc-3渗透测试报告](https://github.com/RainbowSea-MaiDang/Note/blob/main/ExperimentNode/DC-3%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E6%8A%A5%E5%91%8A.md)<br/>
 
 # 二、漏洞复现案例
+[Apache Shiro_反序列化](https://github.com/RainbowSea-MaiDang/Note/blob/main/ExperimentNode/Apache%20Shiro%20%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96.md)<br/>
 
 
 # 三、软件使用

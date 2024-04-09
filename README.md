@@ -20,6 +20,9 @@
 
 
 # 三、软件使用
+[工具 | Nmap使用 | 网络探测](https://github.com/RainbowSea-MaiDang/Note/blob/main/PenetrationNote/%E5%B7%A5%E5%85%B7Nmap.md)<br/>
+[工具 | SQLmap使用 | sql注入](https://github.com/RainbowSea-MaiDang/Note/blob/main/PenetrationNote/%E5%B7%A5%E5%85%B7SQLmap.md)<br/>
+[工具 | MSF使用 | 渗透框架](https://github.com/RainbowSea-MaiDang/Note/blob/main/PenetrationNote/%E5%B7%A5%E5%85%B7MSF.md)<br/>
 
 
 

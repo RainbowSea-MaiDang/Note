@@ -20,6 +20,7 @@
 [Windows 永恒之蓝](https://github.com/RainbowSea-MaiDang/Note/blob/main/ExperimentNode/%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D.md)<br/>
 [MS Office 远程代码执行](https://github.com/RainbowSea-MaiDang/Note/blob/main/ExperimentNode/office%E6%BC%8F%E6%B4%9E.md)<br/>
 [metinfo 5.0.4 任意文件包含](https://github.com/RainbowSea-MaiDang/Note/blob/main/ExperimentNode/metinfo%205.0.4%20%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB.md)<br/>
+[Nginx 解析漏洞](https://github.com/RainbowSea-MaiDang/Note/blob/main/ExperimentNode/Nginx%E8%A7%A3%E6%9E%90%E6%BC%8F%E6%B4%9E.md)<br/>
 
 # 三、软件使用
 [工具 | Nmap使用 | 网络探测](https://github.com/RainbowSea-MaiDang/Note/blob/main/PenetrationNote/%E5%B7%A5%E5%85%B7Nmap.md)<br/>

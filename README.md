@@ -19,7 +19,7 @@
 [Apache Shiro_反序列化](https://github.com/RainbowSea-MaiDang/Note/blob/main/ExperimentNode/Apache%20Shiro%20%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96.md)<br/>
 [Windows 永恒之蓝](https://github.com/RainbowSea-MaiDang/Note/blob/main/ExperimentNode/%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D.md)<br/>
 [MS Office 远程代码执行](https://github.com/RainbowSea-MaiDang/Note/blob/main/ExperimentNode/office%E6%BC%8F%E6%B4%9E.md)<br/>
-
+[metinfo 5.0.4 任意文件包含](https://github.com/RainbowSea-MaiDang/Note/blob/main/ExperimentNode/metinfo%205.0.4%20%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB.md)<br/>
 
 # 三、软件使用
 [工具 | Nmap使用 | 网络探测](https://github.com/RainbowSea-MaiDang/Note/blob/main/PenetrationNote/%E5%B7%A5%E5%85%B7Nmap.md)<br/>
